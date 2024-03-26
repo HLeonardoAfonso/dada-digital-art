@@ -8,8 +8,18 @@ header {
     padding: 22px 30px;
 }
 
-/* class */
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
 
+/* simple classes */
+
+.fit-100 {
+    width: 100%;
+}
+
+/* complete classes */
 
 .btn-cian {
     height: 32px;
@@ -22,7 +32,7 @@ header {
     cursor: pointer;
     box-shadow: -6px 6px 6px 1px rgba(110, 95, 255, 0.5);
 
-    color: #3E3D3A;
+    color: rgb(62, 61, 58);
     font-family: 'Inter';
     font-size: 18px; /*looks difrent */
     font-weight: 600;
@@ -30,9 +40,8 @@ header {
 
 .btn-grey {
     height: 24px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
-    padding: 2px 0px;
     
     border: none;
     border-radius: 5px;
@@ -43,9 +52,26 @@ header {
     font-size: 18px; /*looks difrent */
     font-weight: 600;
 }
+
+.btn-purp {
+    height: 24px;
+    background-color: rgba(187, 134, 255, 0.5);
+    padding: 0;
+    
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    color: #3E3D3A;
+    font-family: 'Inter';
+    font-weight: 600;
+}
   
 /* id */
 
-head-1 {
-    height: 120px;
+#p-pic {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(187, 134, 255, 0.5);
+    border-radius: 50px;
 }

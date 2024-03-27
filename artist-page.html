@@ -42,34 +42,79 @@
         </div>
     </header>
     <!-- Body -->
-    <div class="container-fluid">
-
-        <!-- Perfile -->
-        <div class="row d">
+    <!-- Perfile -->
+    <div class="profile">
+        <div class="row d-flex align-items-center">
             <div class="col-md-1">
-                <div id="p-pic">
+                <div id="p-pic"></div>
             </div>
             <div class="col-md-3">
                 <h1>Name</h1>
             </div>
             <div class="col-md-1">
-                <button class="btn-grey fit-100" >Edit</button>
+                <button class="btn-grey " ><img src="assets/icons/edit.png" class="icon" >Edit</button>
+                <button class="btn-purp" ><img src="assets/icons/upload.png" class="icon" >Upload</button>
             </div>
         </div>
+    </div>
 
-        <!-- Statistics -->
-        <div>Statistics</div>
+    <!-- Statistics -->
 
-        <!-- Listings -->
+    <!-- Listings -->
 
-        <div class="row bg-warning ">
-            <div class="col-lg-3 col-md-4 bg-success p-0">
+        <div class="row p-2">
+            <div class="col-lg-2 col-md-3 p-0 m-2">
                 <img src="assets/images/Art image 1.png" class="fit-100">
                 <div class="row">
                     <div class="col-6"><h5>Card title</h5></div>
                     <div class="col-6"><p>4.9 ***** (255)</p></div>
-                    <div class="col-6 bg-warning"><button type="button" class="btn-grey" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button></div>
-                    <div class="col-6"><button type="button" class="btn-purp fit-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button></div>
+                    <div class="col-6"><button type="button" class="btn-grey" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button></div>
+                    <div class="col-6"><button type="button" class="btn-purp" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button></div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 p-0 m-2">
+                <img src="assets/images/Art image 1.png" class="fit-100">
+                <div class="pt-2 px-2"><h5>Card title</h5></div>
+                <div class="d-flex justify-content-end px-3">
+                    <button type="button" class="btn-purp" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="assets/icons/edit.png" class="icon" >Edit
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 p-0 m-2">
+                <img src="assets/images/Art image 1.png" class="fit-100">
+                <div class="pt-2 px-2"><h5>Card title</h5></div>
+                <div class="d-flex justify-content-end px-3">
+                    <button type="button" class="btn-purp" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="assets/icons/edit.png" class="icon" >Edit
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 p-0 m-2">
+                <img src="assets/images/Art image 1.png" class="fit-100">
+                <div class="pt-2 px-2"><h5>Card title</h5></div>
+                <div class="d-flex justify-content-end px-3">
+                    <button type="button" class="btn-purp" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="assets/icons/edit.png" class="icon" >Edit
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 p-0 m-2">
+                <img src="assets/images/Art image 1.png" class="fit-100">
+                <div class="pt-2 px-2"><h5>Card title</h5></div>
+                <div class="d-flex justify-content-end px-3">
+                    <button type="button" class="btn-purp" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="assets/icons/edit.png" class="icon" >Edit
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 p-0 m-2">
+                <img src="assets/images/Art image 1.png" class="fit-100">
+                <div class="pt-2 px-2"><h5>Card title</h5></div>
+                <div class="d-flex justify-content-end px-3">
+                    <button type="button" class="btn-purp" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="assets/icons/edit.png" class="icon" >Edit
+                    </button>
                 </div>
             </div>
         </div>
@@ -85,11 +130,23 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <div class="row">
+                        <div class="col-3 bg-warning">image</div>
+                        <div class="col bg-success">
+                            <form>
+                                <label for="title">Title:</label>
+                                <input type="text" id="title" name="title"><br>
+                                <label for="year">Year:</label>
+                                <input type="text" id="year" name="year"><br>
+                                <label for="description">Description:</label>
+                                <input type="text" id="description" name="description">
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn-grey" data-bs-dismiss="modal">Save as Draft</button>
+                    <button type="button" class="btn-purp"><img src="assets/icons/upload.png" class="icon">Publish</button>
                 </div>
             </div>
         </div>
@@ -104,18 +161,6 @@
                 </div>
                 <div class="col-md-2">
                     <h6>DADA c 2023</h6>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-1">
-                    <h6>About</h6>
-                </div>
-                <div class="col-md-1">
-                    <h6>Buy</h6>
-                </div>
-                <div class="col-md-1">
-                    <h6>Sell</h6>
                 </div>
             </div>
             <hr>

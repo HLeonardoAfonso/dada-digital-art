@@ -42,35 +42,37 @@
         </div>
     </header>
     <!-- Body -->
-    <div class="fit-100 d-flex p-100">
-        <div class="col-6 ">
-            <div class="d-flex align-items-center justify-content-center">
-                <form class="d-flex flex-column align-items-center m-5">
-                    <h3 class="mb-3">Sign in</h3>
-                    <input type="text" name="name" placeholder="Username" class="m-2 p-1">
-                    <input type="email" name="email" placeholder="Email" class="m-2 p-1" >
-                    <input type="password" name="password" placeholder="Password" class="m-2 mb-4 p-1">
-                    <button type="button" class="btn-purp">
-                        <img src="assets/icons/go.png" class="icon">Sign in
-                    </button>
-                    <a href="/forgot.html" >Forgot paassword?</a>
-                </form>
-            </div>
+    <div class="fit-100 d-flex p-auto gap-5 justify-content-center ">
+        <!-- Sign in -->
+        
+        <div class="d-flex align-items-center justify-content-center border border-2 border-secondary rounded-3 m-3" >
+            <form class="d-flex flex-column align-items-center m-5">
+                <h3 class="mb-3">Sign in</h3>
+                <input type="text" name="name" placeholder="Username" class="m-2 p-1">
+                <input type="email" name="email" placeholder="Email" class="m-2 p-1" >
+                <input type="password" name="password" placeholder="Password" class="m-2 mb-4 p-1">
+                <button type="button" class="btn-purp">
+                    <img src="assets/icons/go.png" class="icon">Sign in
+                </button>
+                <a href="/forgot.html" >Forgot password?</a>
+            </form>
         </div>
-        <div class="bg-warning col">
-            <div class="d-flex align-items-center justify-content-center">
-                <form class="d-flex flex-column align-items-center m-5">
-                    <h3 class="mb-3">Sign up</h3>
-                    <input type="text" name="name" placeholder="Create username" class="m-2 p-1">
-                    <input type="email" name="email" placeholder="Email" class="m-2 p-1" >
-                    <input type="password" name="password" placeholder="Password" class="m-2 p-1">
-                    <input type="password" name="password" placeholder="Re type password" class="m-2 mb-4 p-1">
-                    <button type="button" class="btn-purp">
-                        <img src="assets/icons/go.png" class="icon">Register
-                    </button>
-                </form>
-            </div>
+        
+        <!-- Sign up -->
+        
+        <div class="d-flex align-items-center justify-content-center bg-secondary rounded-3 m-3" >
+            <form class="d-flex flex-column align-items-center m-5">
+                <h3 class="mb-3">Sign up</h3>
+                <input type="text" name="name" placeholder="Create username" class="m-2 p-1">
+                <input type="email" name="email" placeholder="Email" class="m-2 p-1" >
+                <input type="password" name="password" placeholder="Password" class="m-2 p-1">
+                <input type="password" name="password" placeholder="Re type password" class="m-2 mb-4 p-1">
+                <button type="button" class="btn-purp">
+                    <img src="assets/icons/go.png" class="icon">Register
+                </button>
+            </form>
         </div>
+        
     </div>
     <!-- Footer -->
     <footer>

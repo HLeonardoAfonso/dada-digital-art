@@ -9,8 +9,12 @@ header {
 }
 
 footer {
-    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    padding: 30px;
 }
 
 h3 {
@@ -28,6 +32,14 @@ input {font-family: 'Inter';}
 
 .h-50 {
     height: 200px;
+}
+
+.pl-30 {
+    padding-left: 30px;
+}
+
+.p-100 {
+    padding-left: 100px;
 }
 
 .icon {

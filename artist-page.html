@@ -6,6 +6,7 @@
     <link href="styles/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Document</title>
 </head>
 <body class="d-flex flex-column align-items-center" style="height: 100vh">
@@ -42,18 +43,77 @@
         </div>
     </header>
     <main style="width: 100%; padding: 0px  30px; ">
-        <!-- Perfile -->
+
+    <!-- Beadcrumbs -->
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Artists</a></li>
+          <li class="breadcrumb-item active" aria-current="page">So Lazlo</li>
+        </ol>
+      </nav>
+
+    <!-- Perfile -->
     
-    <div class="d-flex flex-row p-0">
-        <div >
-            <img src="/assets/images/Art image 1.png" class="rounded-circle " style=" " >
+    <div class="d-flex flex-row p-0 my">
+        <!-- column 1 -->
+        <div class="col-md-2 imgwrap"  >
+            <img src="/assets/images/Art image 1.png" class="profilepic  "  >
         </div>
-        <div class="col-md-3">
-            <h1>Name</h1>
-        </div>
-        <div class="col-md-1">
-            <button class="btn-grey " ><img src="assets/icons/edit.png" class="icon" >Edit</button>
-            <button class="btn-purp" ><img src="assets/icons/upload.png" class="icon" >Upload</button>
+        <!-- column 2 -->   
+        <div class="d-flex flex-column m-2">
+            <div class="d-inline-flex align-items-center">
+                <h1>So Lazo</h1>
+                <div  class="d-inline-flex align-items-center gap-2" >
+
+                    <button type="button" class="badgeicon  " >
+                        <i class="bi bi-check-lg"></i>
+                    </button>
+                    <button type="button" class="badgeicon  " >
+                        <i class="bi bi-stars"></i>
+                    </button>
+                    <button type="button" class="badgeicon  " >
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+                    
+                    
+                </div>
+            </div>
+            
+           <!-- column 3 --> 
+            <div class="d-flex m-2 gap-2">
+                <button type="button" class="socialicon  " >
+                    <i class="bi bi-instagram"></i>
+                </button>
+                <button type="button" class="socialicon  " >
+                    <i class="bi bi-twitch"></i>
+                </button>
+                <button type="button" class="socialicon  " >
+                    <i class="bi bi-facebook"></i>
+                </button>
+                <button type="button" class="socialicon  " >
+                    <i class="bi bi-twitter"></i>
+                </button>
+               
+            </div>
+
+            <!-- column 4-->
+            <div>
+
+                <p> <i class="bi bi-geo-alt"></i> El Salvador</p>
+            </div>
+        </div>  
+        <div class="col-md-1 mt-1 p-2">
+            <button type="button" class=" btn-grey">
+                <i class="bi bi-pen-fill"></i> Button
+            </button>
+            <button type="button" class=" btn-purp" >
+                <i class="bi bi-upload"></i> Upload
+            </button>
+
+            <!-- <button class="btn-grey " ><img src="assets/icons/edit.png" class="icon" >Edit</button>
+            <button class="btn-purp" ><img src="assets/icons/upload.png" class="icon" >Upload</button> -->
         </div>
     </div>
    
@@ -63,7 +123,7 @@
     <!-- Statistics -->
 
     <!-- Listings -->
-
+    <div>
         <div class="row p-2">
             <div class="col-lg-2 col-md-3 p-0 m-2">
                 <img src="assets/images/Art image 1.png" class="fit-100">

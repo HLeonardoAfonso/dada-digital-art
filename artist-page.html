@@ -56,16 +56,16 @@
 
     <!-- Perfile -->
     
-    <div class="d-flex flex-row p-0 my">
-        <!-- column 1 -->
+    <div class="d-flex flex-row p-0 my " style="gap: 10px" >
+        <!-- Artist image -->
         <div class="col-md-2 " style="width: 150px; height: 150px; border-radius: 75px; overflow: hidden; display: flex; justify-content: center;"  >
             <img src="/assets/images/Art image 1.png" class="  " style=""  >
         </div>
-        <!-- column 2 -->   
+        <!-- Name, badges, socials, location -->   
         <div class="d-flex flex-column m-2">
-            <div class="d-inline-flex align-items-center">
+            <div class="d-inline-flex align-items-center gap-2">
                 <h1>So Lazo</h1>
-                <div  class="d-inline-flex align-items-center gap-2" >
+                <div  class="d-inline-flex align-items-center gap-2  " >
 
                     <button type="button" class="badgeicon  " >
                         <i class="bi bi-check-lg"></i>
@@ -77,12 +77,21 @@
                         <i class="bi bi-arrow-up-right"></i>
                     </button>
                     
+                    <button type="button" class="badgeicon  " >
+                        <i class="bi bi-check-lg"></i>
+                    </button>
+                    <button type="button" class="badgeicon  " >
+                        <i class="bi bi-stars"></i>
+                    </button>
+                    <button type="button" class="badgeicon  " >
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
                     
                 </div>
             </div>
             
-           <!-- column 3 --> 
-            <div class="d-flex m-2 gap-2">
+           <!-- Edit Upload buttons --> 
+            <div class="d-inline-flex my-2 gap-2 ml-0 pl-0">
                 <button type="button" class="socialicon  " >
                     <i class="bi bi-instagram"></i>
                 </button>
@@ -104,12 +113,12 @@
                 <p> <i class="bi bi-geo-alt"></i> El Salvador</p>
             </div>
         </div>  
-        <div class="col-md-1 mt-1 p-2">
-            <button type="button" class=" btn-grey">
+        <div class="col-md-2 mt-1 p-2 ">
+            <button type="button" class=" m-2 btn-grey">
                 <i class="bi bi-pen-fill"></i> &nbsp EDIT
             </button>
-            <button type="button" class=" btn-purp" >
-                <i class="bi bi-upload"></i> &nbsp UPLOAD
+            <button type="button" class="m-2 btn-purp" >
+                <i class="bi bi-upload "> </i> &nbsp UPLOAD
             </button>
 
             <!-- <button class="btn-grey " ><img src="assets/icons/edit.png" class="icon" >Edit</button>
@@ -123,64 +132,252 @@
     <!-- Statistics -->
 
     <!-- Listings -->
-    <div>
-        <div class="row p-2">
-            <div class="col-lg-2 col-md-3 p-0 m-2">
-                <img src="assets/images/Art image 1.png" class="fit-100">
-                <div class="row">
+    
+        <div class="d-flex ">
+
+            <!-- A card -->
+            <div class=" flex-column col-md-3 m-2 ">
+                <img src="assets/images/Art image 1.png" class="img img-fluid">
+                <div class="d-flex">
+                    <div class="d-flex">
+                        <strong class="bold">Big long title</strong>
+                        <div>, 2024</div>
+                    </div>
+
+                    <div  class="d-flex ms-auto ">
+                        <div>4.9  </div>
+                        <i class="bi bi-star-fill" style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star-fill" style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star-fill" style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star-fill " style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star"></i>
+                        <div> (255) </div>
+                    </div>  
+                </div>
+
+                <!-- tags of the item type -->
+
+                <div class="d-flex flex-wrap gap-2 my-2">
+                    <button type="button" class="badgeinfo " >
+                        <i class="bi bi-arrow-up-right"> </i> Digital art 
+                    </button>
+                    <button type="button" class=" badgeinfo" >
+                        <i class="bi bi-arrow-up-right"> </i>Etherium
+                        
+                    </button>
+                    <button type="button" class=" badgeinfo" >
+                        
+                        <i class="bi bi-arrow-up-right">  </i>Fan art
+                        
+                    </button>
+                    <button type="button" class="badgeinfo " >
+                        
+                        
+                        <i class="bi bi-stars"></i>Cartoon
+                    </button>
+                </div>
+
+                <!-- buttons and price -->
+                <div class="d-flex gap-2 ">
+                    <button type="button" class=" btn-grey">
+                        <i class="bi bi-pen-fill"></i> &nbsp EDIT
+                    </button>
+                    <button type="button" class=" btn-purp" >
+                        <i class="bi bi-upload"> </i> &nbsp UPLOAD
+                    </button>
+                </div>
+
+                <!-- <div class="row">
                     <div class="col-6"><h5>Card title</h5></div>
                     <div class="col-6"><p>4.9 ***** (255)</p></div>
                     <div class="col-6"><button type="button" class="btn-grey" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button></div>
                     <div class="col-6"><button type="button" class="btn-purp" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button></div>
-                </div>
+                </div> -->
             </div>
-            <div class="col-lg-2 col-md-3 p-0 m-2">
-                <img src="assets/images/Art image 1.png" class="fit-100">
-                <div class="pt-2 px-2"><h5>Card title</h5></div>
-                <div class="d-flex justify-content-end px-3">
-                    <button type="button" class="btn-purp" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="assets/icons/edit.png" class="icon" >Edit
+
+            <!-- A card -->
+            <div class=" flex-column col-md-3 m-2 ">
+                <img src="assets/images/Art image 1.png" class="img img-fluid">
+                <div class="d-flex">
+                    <div class="d-flex">
+                        <strong class="bold">Big long title</strong>
+                        <div>, 2024</div>
+                    </div>
+
+                    <div  class="d-flex ms-auto ">
+                        <div>4.9  </div>
+                        <i class="bi bi-star-fill" style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star-fill" style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star-fill" style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star-fill " style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star"></i>
+                        <div> (255) </div>
+                    </div>  
+                </div>
+
+                <!-- tags of the item type -->
+
+                <div class="d-flex flex-wrap gap-2 my-2">
+                    <button type="button" class="badgeinfo " >
+                        <i class="bi bi-arrow-up-right"> </i> Digital art 
+                    </button>
+                    <button type="button" class=" badgeinfo" >
+                        <i class="bi bi-arrow-up-right"> </i>Etherium
+                        
+                    </button>
+                    <button type="button" class=" badgeinfo" >
+                        
+                        <i class="bi bi-arrow-up-right">  </i>Fan art
+                        
+                    </button>
+                    <button type="button" class="badgeinfo " >
+                        
+                        
+                        <i class="bi bi-stars"></i>Cartoon
                     </button>
                 </div>
-            </div>
-            <div class="col-lg-2 col-md-3 p-0 m-2">
-                <img src="assets/images/Art image 1.png" class="fit-100">
-                <div class="pt-2 px-2"><h5>Card title</h5></div>
-                <div class="d-flex justify-content-end px-3">
-                    <button type="button" class="btn-purp" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="assets/icons/edit.png" class="icon" >Edit
+
+                <!-- buttons and price -->
+                <div class="d-flex gap-2 ">
+                    <button type="button" class=" btn-grey">
+                        <i class="bi bi-pen-fill"></i> &nbsp EDIT
+                    </button>
+                    <button type="button" class=" btn-purp" >
+                        <i class="bi bi-upload"> </i> &nbsp UPLOAD
                     </button>
                 </div>
+
+                <!-- <div class="row">
+                    <div class="col-6"><h5>Card title</h5></div>
+                    <div class="col-6"><p>4.9 ***** (255)</p></div>
+                    <div class="col-6"><button type="button" class="btn-grey" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button></div>
+                    <div class="col-6"><button type="button" class="btn-purp" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button></div>
+                </div> -->
             </div>
-            <div class="col-lg-2 col-md-3 p-0 m-2">
-                <img src="assets/images/Art image 1.png" class="fit-100">
-                <div class="pt-2 px-2"><h5>Card title</h5></div>
-                <div class="d-flex justify-content-end px-3">
-                    <button type="button" class="btn-purp" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="assets/icons/edit.png" class="icon" >Edit
+
+
+            <!-- A card -->
+            <div class=" flex-column col-md-3 m-2 ">
+                <img src="assets/images/Art image 1.png" class="img img-fluid">
+                <div class="d-flex">
+                    <div class="d-flex">
+                        <strong class="bold">Big long title</strong>
+                        <div>, 2024</div>
+                    </div>
+
+                    <div  class="d-flex ms-auto ">
+                        <div>4.9  </div>
+                        <i class="bi bi-star-fill" style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star-fill" style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star-fill" style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star-fill " style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star"></i>
+                        <div> (255) </div>
+                    </div>  
+                </div>
+
+                <!-- tags of the item type -->
+
+                <div class="d-flex flex-wrap gap-2 my-2">
+                    <button type="button" class="badgeinfo " >
+                        <i class="bi bi-arrow-up-right"> </i> Digital art 
+                    </button>
+                    <button type="button" class=" badgeinfo" >
+                        <i class="bi bi-arrow-up-right"> </i>Etherium
+                        
+                    </button>
+                    <button type="button" class=" badgeinfo" >
+                        
+                        <i class="bi bi-arrow-up-right">  </i>Fan art
+                        
+                    </button>
+                    <button type="button" class="badgeinfo " >
+                        
+                        
+                        <i class="bi bi-stars"></i>Cartoon
                     </button>
                 </div>
-            </div>
-            <div class="col-lg-2 col-md-3 p-0 m-2">
-                <img src="assets/images/Art image 1.png" class="fit-100">
-                <div class="pt-2 px-2"><h5>Card title</h5></div>
-                <div class="d-flex justify-content-end px-3">
-                    <button type="button" class="btn-purp" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="assets/icons/edit.png" class="icon" >Edit
+
+                <!-- buttons and price -->
+                <div class="d-flex gap-2 ">
+                    <button type="button" class=" btn-grey">
+                        <i class="bi bi-pen-fill"></i> &nbsp EDIT
+                    </button>
+                    <button type="button" class=" btn-purp" >
+                        <i class="bi bi-upload"> </i> &nbsp UPLOAD
                     </button>
                 </div>
+
+                <!-- <div class="row">
+                    <div class="col-6"><h5>Card title</h5></div>
+                    <div class="col-6"><p>4.9 ***** (255)</p></div>
+                    <div class="col-6"><button type="button" class="btn-grey" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button></div>
+                    <div class="col-6"><button type="button" class="btn-purp" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button></div>
+                </div> -->
             </div>
-            <div class="col-lg-2 col-md-3 p-0 m-2">
-                <img src="assets/images/Art image 1.png" class="fit-100">
-                <div class="pt-2 px-2"><h5>Card title</h5></div>
-                <div class="d-flex justify-content-end px-3">
-                    <button type="button" class="btn-purp" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="assets/icons/edit.png" class="icon" >Edit
+
+
+            <!-- A card -->
+            <div class=" flex-column col-md-3 m-2 ">
+                <img src="assets/images/Art image 1.png" class="img img-fluid">
+                <div class="d-flex">
+                    <div class="d-flex">
+                        <strong class="bold">Big long title</strong>
+                        <div>, 2024</div>
+                    </div>
+
+                    <div  class="d-flex ms-auto ">
+                        <div>4.9  </div>
+                        <i class="bi bi-star-fill" style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star-fill" style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star-fill" style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star-fill " style = "color:#BB86FF;"></i>
+                        <i class="bi bi-star"></i>
+                        <div> (255) </div>
+                    </div>  
+                </div>
+
+                <!-- tags of the item type -->
+
+                <div class="d-flex flex-wrap gap-2 my-2">
+                    <button type="button" class="badgeinfo " >
+                        <i class="bi bi-arrow-up-right"> </i> Digital art 
+                    </button>
+                    <button type="button" class=" badgeinfo" >
+                        <i class="bi bi-arrow-up-right"> </i>Etherium
+                        
+                    </button>
+                    <button type="button" class=" badgeinfo" >
+                        
+                        <i class="bi bi-arrow-up-right">  </i>Fan art
+                        
+                    </button>
+                    <button type="button" class="badgeinfo " >
+                        
+                        
+                        <i class="bi bi-stars"></i>Cartoon
                     </button>
                 </div>
+
+                <!-- buttons and price -->
+                <div class="d-flex gap-2 ">
+                    <button type="button" class=" btn-grey">
+                        <i class="bi bi-pen-fill"></i> &nbsp EDIT
+                    </button>
+                    <button type="button" class=" btn-purp" >
+                        <i class="bi bi-upload"> </i> &nbsp UPLOAD
+                    </button>
+                </div>
+
+                <!-- <div class="row">
+                    <div class="col-6"><h5>Card title</h5></div>
+                    <div class="col-6"><p>4.9 ***** (255)</p></div>
+                    <div class="col-6"><button type="button" class="btn-grey" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button></div>
+                    <div class="col-6"><button type="button" class="btn-purp" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button></div>
+                </div> -->
             </div>
-        </div>
-    </div>
+
+            
 
     <!-- Modal --> 
 

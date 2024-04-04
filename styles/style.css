@@ -76,7 +76,8 @@ input {font-family: 'Inter';}
 
 .btn-grey {
     height: 32px;
-    min-width: 102px;
+    /* min-width: 102px; */
+    width: 100%;
     background-color: #D9D9D9;
     padding: 15px;
 
@@ -96,7 +97,7 @@ input {font-family: 'Inter';}
 
 .btn-purp {
     height: 32px;
-    min-width: 102px;
+    width: 100%;
     background-color: #D2BCFF;
     padding: 15px;
 
@@ -150,7 +151,7 @@ input {font-family: 'Inter';}
         background-color: #BB86FF;
         border-radius: 12px;
         border-width: 0px;
-        display: flex;
+        display: flexbox;
         align-items: center;
         overflow: hidden;
     }
@@ -167,4 +168,15 @@ input {font-family: 'Inter';}
 
     .purpled {
         background-color: #BB86FF;
+    }
+
+    .badgeinfo {
+        /* Badge */
+        
+        background-color: #D9D9D9;
+        border-radius: 12px;
+        border-width: 0px;
+        display: flexbox;
+        align-items: center;
+        overflow: hidden;
     }

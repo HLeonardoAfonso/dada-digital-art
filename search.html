@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -44,7 +46,7 @@
 
     <main class="d-flex" style="padding: 0 30px; width: 100vw;">
         <!-- Filter -->
-        <div class="col-3">
+        <div class="col-xl-2 col-md-3">
             <div class="d-flex justify-content-between">
                 <h3>Filters</h3>
                 <button class="btn-grey"><img src="assets/icons/save.png"> search</button>
@@ -53,22 +55,126 @@
             <p>Keyword search</p>
             <input type="text" name="name" placeholder="&#128269; Search" >
             <hr>
+            <!--Style-->
+            <h5>Style</h5>
             <div class="form-check form-switch">
                 <input class="form-check-input" type="checkbox" onclick="toggleDisable()" role="switch" id="toggleAll" selected="false">
                 <label class="form-check-label" for="toggleAll">All</label>
             </div>
             <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="treeD">
-                <label class="form-check-label" for="treeD">3D</label>
+                <input class="form-check-input" type="checkbox" role="switch" id="threeD">
+                <label class="form-check-label" for="threeD">3D</label>
             </div>
             <div class="form-check form-switch">
                 <input class="form-check-input sty " type="checkbox" role="switch" id="abstract">
                 <label class="form-check-label" for="abstract">Abstract</label>
             </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input sty " type="checkbox" role="switch" id="algorithmic">
+                <label class="form-check-label" for="algorithmic">Algorithmic</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input sty " type="checkbox" role="switch" id="cartoon">
+                <label class="form-check-label" for="cartoon">Cartoon</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input sty " type="checkbox" role="switch" id="fan-art">
+                <label class="form-check-label" for="fan-art">Fan Art</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input sty " type="checkbox" role="switch" id="futurism">
+                <label class="form-check-label" for="futurism">Futurism</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input sty " type="checkbox" role="switch" id="mixed">
+                <label class="form-check-label" for="mixed">Mixed & Integrated</label>
+            </div>
+            <p>Show more</p>
+            <hr>
+            <!--Artist-->
+            <h5>Artist</h5>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" onclick="toggleDisable()" role="switch" id="toggleAll" selected="false">
+                <label class="form-check-label" for="toggleAll">All</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input sty " type="checkbox" role="switch" id="the-rusted-pixel">
+                <label class="form-check-label" for="the-rusted-pixel">The Rusted Pixel</label>
+            </div>
+            <p>Show more</p>
+            <hr>
+            <!--Medium-->
+            <h5>Medium</h5>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" onclick="toggleDisable()" role="switch" id="toggleAll" selected="false">
+                <label class="form-check-label" for="toggleAll">All</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input sty " type="checkbox" role="switch" id="painting">
+                <label class="form-check-label" for="painting">Painting</label>
+            </div>
+            <p>Show more</p>
+            <hr>
+            <!--Rating-->
+            <h5>Medium</h5>
+            <div class="form-check form-switch">
+                <input class="form-check-input sty " type="checkbox" role="switch" id="5stars">
+                <label class="form-check-label" for="5stars">5</label>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input sty " type="checkbox" role="switch" id="4stars">
+                <label class="form-check-label" for="4stars">4</label>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input sty " type="checkbox" role="switch" id="3stars">
+                <label class="form-check-label" for="3stars">3</label>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input sty " type="checkbox" role="switch" id="2stars">
+                <label class="form-check-label" for="2stars">2</label>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input sty " type="checkbox" role="switch" id="1stars">
+                <label class="form-check-label" for="1stars">1</label>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+            </div>
+            <br>
         </div>
         <!-- Search -->
-        <div class="col-9 bg-warning">
-            listings
+        <div class="col bg-warning">
+            <div class="d-flex">
+                <h3>Search</h3>
+                <div class="btn-grey">
+                    <i class="bi bi-x"></i>3D
+                </div>
+                <div class="btn-grey">
+                    <i class="bi bi-x"></i>Cartoon
+                </div>
+            </div>
         </div>
     </main>  
 

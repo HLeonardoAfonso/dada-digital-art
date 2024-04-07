@@ -59,9 +59,12 @@ input {font-family: 'Inter';}
 /* buttons */
 .btn-cian {
     height: 32px;
+    width: auto;
     min-width: 102px;
     background-color: #8CFCE8;
-    margin-right: 20px;
+    
+
+    display: ;
     
     border: none;
     border-radius: 5px;
@@ -118,7 +121,7 @@ input {font-family: 'Inter';}
 .btn-white {
     height: 32px;
     /* min-width: 102px; */
-    width: 100%;
+    /* width: 100%; */
     background-color: #ffffff;
     padding: 15px;
 

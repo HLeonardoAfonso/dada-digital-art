@@ -6,7 +6,7 @@
         "Tags":"",
         "Colection":"",
         "Description":"",
-        "Cover-img":"url:assets/images/Art image 1.png",
+        "Coverimg":"/assets/images/Art image 1.png",
         "Rating":"4.8"
     },
 
@@ -17,7 +17,29 @@
         "Tags":"",
         "Colection":"",
         "Description":"",
-        "Cover-img":"url:assets/images/Art image 1.png",
+        "Coverimg":"/assets/images/Art image 1.png",
+        "Rating":"4.8"
+    },
+
+    {
+        "Title":"Big Long Title",
+        "Price":"",
+        "Year":"2019",
+        "Tags":"",
+        "Colection":"",
+        "Description":"",
+        "Coverimg":"/assets/images/Art image 1.png",
+        "Rating":"4.8"
+    },
+
+    {
+        "Title":"Big Long Title",
+        "Price":"",
+        "Year":"2019",
+        "Tags":"",
+        "Colection":"",
+        "Description":"",
+        "Coverimg":"/assets/images/Art image 1.png",
         "Rating":"4.8"
     }
 ]

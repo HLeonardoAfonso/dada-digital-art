@@ -13,25 +13,45 @@
 <body class="d-flex align-items-start flex-column" style="height: 100vh;">
     <!-- Header -->
     <header>
-        <div class="row d-flex align-items-center" >
-            <div class="col-md-3 ">
+        <div class="flex-row d-flex align-items-center gap-4" >
+            <div class="d-flex align-items-center ">
                 <img src="assets/images/logo.svg">
-                drop down 
+                <div class="dropdown">
+                    <button class="btn greyed  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">All</a></li>
+                        <li><a class="dropdown-item" href="#">Abstract</a></li>
+                        <li><a class="dropdown-item" href="#">Cartoon</a></li>
+                        <li><a class="dropdown-item" href="#">3D</a></li>
+                        <li><a class="dropdown-item" href="#">FanArt</a></li>
+                        <li><a class="dropdown-item" href="#">Manga</a></li><li><a class="dropdown-item" href="#">All</a></li>
+                        <li><a class="dropdown-item" href="#">Retro</a></li>
+                        <li><a class="dropdown-item" href="#">PixelArt</a></li><li><a class="dropdown-item" href="#">All</a></li>
+                        <li><a class="dropdown-item" href="#">Space</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-6">
-                search
-                buy
-                sell
-                eur 
+            <div class="d-flex  align-items-center col gap-5" >
+                <div class="form-floating col d-flex align-items-center text-center" >
+                    <input type="text" class="form-control"  id="exampleInputSearch" aria-describedby="Search area" placeholder="Search" >
+                    <label class="text-center" for="floatingInput "><i class="bi bi-search "></i> Search</label>
+                </div>
+                <a>Buy</a>
+                <a>Sell</a>
+                <a><i class="bi bi-flag fs-5"></i>€ EUR</a>
             </div>
-            <div class="col-md-3">
-                log in
-                star
-                cart
+            <div class="col-md-2   d-inline-flex gap-2 ">
+                <button class="btn-white fit-100">
+                    <i class="bi bi-profile"></i> Log in / Register
+                </button>
+                <a ><i class="bi bi-star fs-4 " ></i></a>
+                <a ><i class="bi bi-cart fs-4" ></i></a>
             </div>
         </div>
-        <div class="pt-3">
-            <button class="btn-cian">All</button>
+        <div class="pt-3 d-flex  align-items-center gap-2 justify-content-between">
+            <button class="btn-cian ">All</button>
             <button class="btn-cian">Abstract</button>
             <button class="btn-cian">Cartoon</button>
             <button class="btn-cian">3D</button>
@@ -40,16 +60,27 @@
             <button class="btn-cian">Retro</button>
             <button class="btn-cian">Pixel Art</button>
             <button class="btn-cian">Space</button>
-            <button class="btn-cian">more...</button>
+            <button class="btn-white btn-large col-2">
+                <i class="bi bi-download"></i> &nbsp; Download App
+            </button>
         </div>
     </header>
 
+    <!-- Beadcrumbs -->
+    <nav aria-label="breadcrumb" style="padding: 0 30px; width: 100vw;">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Search</li>
+        </ol>
+    </nav>
+
     <main class="d-flex" style="padding: 0 30px; width: 100vw;">
+
         <!-- Filter -->
         <div class="col-xl-2 col-md-3">
             <div class="d-flex justify-content-between">
                 <h3>Filters</h3>
-                <button class="btn-grey"><img src="assets/icons/save.png"> search</button>
+                <button class="btn-grey" style="width: fit-content;"><img src="assets/icons/save.png"> Save search</button>
             </div>
             <hr>
             <p>Keyword search</p>
@@ -165,13 +196,13 @@
             <br>
         </div>
         <!-- Search -->
-        <div class="col bg-warning">
+        <div class="col ms-3">
             <div class="d-flex">
-                <h3>Search</h3>
-                <div class="btn-grey">
+                <h3 class="me-2">Search</h3>
+                <div class="btn-grey mx-2" style="width: fit-content;">
                     <i class="bi bi-x"></i>3D
                 </div>
-                <div class="btn-grey">
+                <div class="btn-grey mx-2" style="width: fit-content;">
                     <i class="bi bi-x"></i>Cartoon
                 </div>
             </div>

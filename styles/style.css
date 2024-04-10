@@ -63,9 +63,6 @@ input {font-family: 'Inter';}
     min-width: 102px;
     background-color: #8CFCE8;
     
-
-    display: ;
-    
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -148,9 +145,6 @@ input {font-family: 'Inter';}
     border-radius: 50px;
 }
 
-.sty {
-
-}
 .profilepic {
     display: inline-block;
     
@@ -195,7 +189,7 @@ input {font-family: 'Inter';}
     }
 
     .greyed {
-        background-color: ##D9D9D9;
+        background-color: #D9D9D9;
     }
 
     .badgeinfo {

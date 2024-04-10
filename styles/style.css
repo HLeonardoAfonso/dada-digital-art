@@ -157,7 +157,7 @@ input {font-family: 'Inter';}
 
     }
 
-    imgwrap {
+    .imgwrap {
         overflow: hidden;
         height: 150px;
     }
@@ -200,5 +200,6 @@ input {font-family: 'Inter';}
         border-width: 0px;
         display: flexbox;
         align-items: center;
-        overflow: hidden;
+        width: fit-content;
+        padding: 0 10px;
     }

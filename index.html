@@ -3,9 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Home</title>
 </head>
 <body>
+    <header>
+        <div class="flex-row d-flex align-items-center gap-4" >
+            <div class="d-flex align-items-center ">
+                <a href="/index.html"><img src="assets/images/logo.svg"></a>
+                
+                <div class="dropdown">
+                    <button class="btn greyed  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">All</a></li>
+                      <li><a class="dropdown-item" href="#">Abstract</a></li>
+                      <li><a class="dropdown-item" href="#">Cartoon</a></li>
+                      <li><a class="dropdown-item" href="#">3D</a></li>
+                      <li><a class="dropdown-item" href="#">FanArt</a></li>
+                      <li><a class="dropdown-item" href="#">Manga</a></li><li><a class="dropdown-item" href="#">All</a></li>
+                      <li><a class="dropdown-item" href="#">Retro</a></li>
+                      <li><a class="dropdown-item" href="#">PixelArt</a></li><li><a class="dropdown-item" href="#">All</a></li>
+                      <li><a class="dropdown-item" href="#">Space</a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+
+            <div class="d-flex  align-items-center col gap-5" >
+                <div class="form-floating col d-flex align-items-center text-center" >
+                    <input type="text" class="form-control"  id="exampleInputSearch" aria-describedby="Search area" placeholder="Search" >
+                    <label class="text-center" for="floatingInput "><i class="bi bi-search "></i> Search</label>
+                </div>
+
+
+                
+                <a>Buy</a>
+                <a>Sell</a>
+                
+                <div class="dropdown">
+                    <button class="btn greyed  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-flag fs-5"></i>€ EUR
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                € EUR
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                $ USD
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                £ GBP
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                
+                
+                
+            </div>
+            <div class="col-md-2   d-inline-flex gap-2 ">
+
+                    
+                
+                    <button class="btn-white fit-100">
+                        <i class="bi bi-profile"></i> Log in / Register
+                    </button>
+                
+                
+                <a >
+                    <i class="bi bi-star fs-4 " ></i> 
+                </a>
+                <a >
+                    <i class="bi bi-cart fs-4" ></i> 
+                </a>
+
+            </div>
+        </div>
+        <div class="pt-3 d-flex  align-items-center gap-2 justify-content-between">
+            <a href="/search.html"><button class="btn-cian ">All</button></a>
+            <button class="btn-cian">Abstract</button>
+            <button class="btn-cian">Cartoon</button>
+            <button class="btn-cian">3D</button>
+            <button class="btn-cian">Fan Art</button>
+            <button class="btn-cian">Manga</button>
+            <button class="btn-cian">Retro</button>
+            <button class="btn-cian">Pixel Art</button>
+            <button class="btn-cian">Space</button>
+            
+            <button class="btn-white btn-large col-2">
+                <i class="bi bi-download"></i> &nbsp; Download App
+            </button>
+        </div>
+    </header>
+    <main>
+
+    </main>
     
 </body>
 </html>

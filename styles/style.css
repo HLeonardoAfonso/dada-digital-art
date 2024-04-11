@@ -203,3 +203,16 @@ input {font-family: 'Inter';}
         width: fit-content;
         padding: 0 10px;
     }
+
+    .badgeinfosmall {
+        /* Small Badge */
+        
+        background-color: #D9D9D9;
+        border-radius: 12px;
+        border-width: 0px;
+        display: flexbox;
+        align-items: center;
+        width: fit-content;
+        padding: 0 10px;
+        font-size: smaller;
+    }

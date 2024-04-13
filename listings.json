@@ -1,13 +1,13 @@
 [
     {
-        "Title":"Big Long Title",
-        "Price":"250.00",
-        "Year":"2020",
-        "Tags":"threeD",
-        "Colection":"",
-        "Description":"",
-        "Coverimg":"/assets/images/Art image 1.png",
-        "Rating":"4.8"
+        "title":"Big Long Title",
+        "price":"250.00",
+        "year":"2020",
+        "tags":"threeD",
+        "colection":"",
+        "description":"",
+        "coverimg":"/assets/images/ArtImage1.png",
+        "rating":"4.8"
     },
 
     {

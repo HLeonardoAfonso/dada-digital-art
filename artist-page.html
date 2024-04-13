@@ -186,7 +186,7 @@
         <div class="d-flex flex-wrap ">
 
             <!-- A card -->
-            <div id="cardListing" class="d-flex">
+            <div id="cardListing" class="d-flex flex-wrap">
                 <!--Display JSON file-->
             </div>
                 
@@ -194,8 +194,7 @@
                 
             
 
-    <!-- Modal --> 
-
+    <!-- Modal for creation of listing --> 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
@@ -213,7 +212,7 @@
                                 <label for="year">Year:</label>
                                 <input type="text" id="year" name="year"><br>
                                 <label for="description">Description:</label>
-                                <input type="text" id="description" name="description">
+                                <textarea id="description" name="description" rows="4" cols="50"></textarea>
                             </form>
                         </div>
                     </div>
@@ -292,13 +291,13 @@
                 const response = await fetch('listings.json')
                 const lv = await response.json()
                 
-                const filterapplied = lv.filter(item => item.Year == 2020)
-                console.log(filterapplied)
+                // const filterapplied = lv.filter(item => item.Year == 2020)
+                // console.log(filterapplied)
 
-                for (const artigo of filterapplied) {
+                for (const artigo of lv) {
                     strHtml += `
-                        <div class=" flex-column col-md-3 p-2 ">
-                            <img src="${artigo.coverimg}" class="img img-fluid">
+                        <div class=" flex-column col-xxl-3 col-md-3 p-2 ">
+                            <img src="${artigo.coverimg}" class="img img-fluid w-100">
                             <div class="d-flex">
                                 <div class="d-flex">
                                     <strong class="bold">${artigo.title}</strong>
@@ -334,12 +333,45 @@
 
                             <!-- buttons and price -->
                             <div class="d-flex gap-2 ">
-                                <button type="button" class=" btn-grey">
+                                <button type="button" class=" btn-grey" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     <i class="bi bi-pen-fill"></i> &nbsp EDIT
                                 </button>
                                 <button type="button" class=" btn-purp" >
                                     <i class="bi bi-upload"> </i> &nbsp UPLOAD
                                 </button>
+                            </div>
+
+                            <!-- MODAL for listing EDIT --> 
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">${artigo.title}</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-3 bg-warning">
+                                                    <img src="${artigo.coverimg}" class="img img-fluid w-100">
+                                                </div>
+                                                <div class="col bg-success">
+                                                    <form>
+                                                        <label for="title">Title:</label>
+                                                        <input type="text" id="title" name="title" value="${artigo.title}" ><br>
+                                                        <label for="year">Year:</label>
+                                                        <input type="text" id="year" name="year" value="${artigo.year}"><br>
+                                                        <label for="description">Description:</label>
+                                                        <textarea id="description" name="description" value="${artigo.description} rows="4" cols="50"></textarea>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn-grey" data-bs-dismiss="modal">Save as Draft</button>
+                                            <button type="button" class="btn-purp"><img src="assets/icons/upload.png" class="icon">Publish</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     `

@@ -93,7 +93,7 @@
                 <label class="form-check-label" for="toggleAll">All</label>
             </div>
             <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="threeD">
+                <input class="form-check-input" type="checkbox" role="switch" id="threeD" onchange="toggleFilter()">
                 <label class="form-check-label" for="threeD">3D</label>
             </div>
             <div class="form-check form-switch">
@@ -254,6 +254,18 @@
                 let strHtml = ``
                 const response = await fetch('listings.json')
                 const lv = await response.json()
+
+                let toggled = []
+
+                // var togglefilter = document.getElementById("threeD");
+                function toggleFilter() {
+                    toggled.push
+                }
+
+
+                const filterapplied = lv.filter(item => item.Year == toggled )
+                console.log(filterapplied)
+
                 for (const artigo of lv) {
                     strHtml += `
                         <div class=" flex-column col-md-3 p-2 ">

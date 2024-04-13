@@ -1,45 +1,34 @@
 [
     {
-        "Title":"Big Long Title",
-        "Price":"",
-        "Year":"2020",
-        "Tags":"",
-        "Colection":"",
-        "Description":"",
-        "Coverimg":"/assets/images/Art image 1.png",
-        "Rating":"4.8"
+        "title":"Big Long Title",
+        "price":"250.00",
+        "year":"2020",
+        "tags":"",
+        "colection":"",
+        "description":"",
+        "coverimg":"/assets/images/ArtImage1.png",
+        "rating":"4.8"
     },
 
     {
-        "Title":"Big Long Title",
-        "Price":"",
-        "Year":"2019",
-        "Tags":"",
-        "Colection":"",
-        "Description":"",
-        "Coverimg":"/assets/images/Art image 1.png",
-        "Rating":"4.8"
+        "title":"Big Long Title",
+        "price":"250.00",
+        "year":"2020",
+        "tags":"",
+        "colection":"",
+        "description":"",
+        "coverimg":"/assets/images/ArtImage3.png",
+        "rating":"4.8"
     },
 
     {
-        "Title":"Big Long Title",
-        "Price":"",
-        "Year":"2020",
-        "Tags":"",
-        "Colection":"",
-        "Description":"",
-        "Coverimg":"/assets/images/Art image 1.png",
-        "Rating":"4.8"
-    },
-
-    {   
-        "Title":"Big Long Title",
-        "Price":"",
-        "Year":"2021",
-        "Tags":"",
-        "Colection":"",
-        "Description":"",
-        "Coverimg":"/assets/images/Art image 1.png",
-        "Rating":"4.8"
+        "title":"Big Long Title",
+        "price":"250.00",
+        "year":"2020",
+        "tags":"",
+        "colection":"",
+        "description":"",
+        "coverimg":"/assets/images/ArtImage2.png",
+        "rating":"4.8"
     }
 ]

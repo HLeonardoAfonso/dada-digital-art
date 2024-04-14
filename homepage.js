@@ -1,20 +1,4 @@
-        const button = document.getElementById("toggleAll");
-        const input = document.getElementsByClassName("sty");
-        
-        const toggledArray = [];
-
-        function filterbyid(id) {
-            if (toggledArray.includes(id)) {
-                toggledArray.splice(toggledArray.indexOf(id), 1);
-            } else {
-                toggledArray.push(id);
-            }
-
-            console.log(toggledArray);
-            
-        }
-
-        const findListings  = async () => {
+const findHomeListings  = async () => {
             let strHtml = ``;
             const response = await fetch('listings.json');
             const lv = await response.json();
@@ -26,7 +10,8 @@
 
            
 
-            for (const artigo of lv) {
+            for (artigo of lv ) { 
+                
                     strHtml += `
                         <div class=" flex-column col-xxl-3 col-xl-3 col-lg-4 p-2 ">
                             <img src="${artigo.coverimg}" class="img img-fluid w-100">
@@ -106,18 +91,18 @@
                             </div>
                         </div>
                     `
-                }
-                document.getElementById("cardListing").innerHTML = strHtml;
+                
+                
+                    
+                
+                
+            }
+                
+                    
+            document.getElementById("cardHomeListing").innerHTML = strHtml;
                 
             }
 
-            button.addEventListener("click", () => {
-                for (let i = 0; i < input.length; i++) {
-                    input[i].toggleAttribute("disabled");
-                }
-                
-                findListings();
-            });
+            
 
-        findListings();
-    
+        findHomeListings();

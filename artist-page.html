@@ -167,7 +167,7 @@
             <button type="button" class=" m-2 btn-grey">
                 <i class="bi bi-pen-fill"></i> &nbsp EDIT
             </button>
-            <button type="button" class="m-2 btn-purp" >
+            <button type="button" class="m-2 btn-purp" data-bs-toggle="modal" data-bs-target="#listingCreationModal" >
                 <i class="bi bi-upload "> </i> &nbsp UPLOAD
             </button>
 
@@ -195,7 +195,7 @@
             
 
     <!-- Modal for creation of listing --> 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="listingCreationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
@@ -203,27 +203,95 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-3 bg-warning">image</div>
-                        <div class="col bg-success">
+                    <div class="d-flex flex-wrap">
+                        <p class="modalComents col-12">Cover</p>
+                        <div class="col-4">
+                            <div class="w-100 h-50 greyed d-flex justify-content-center align-items-center">
+                                <div class="bg-white px-2">
+                                    <i class="bi bi-upload me-2"></i>Browse or Drag-and-drop
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pl-30">
+                            <div class="d-flex pb-3">
+                                <button type="button" class="btn-grey me-3 col-4" data-bs-dismiss="modal">Save as Draft</button>
+                                <button type="button" class="btn-purp mx-3 col-4" data-bs-dismiss="modal"><img src="assets/icons/upload.png" class="icon">Publish</button>
+                            </div>
                             <form>
                                 <label for="title">Title:</label>
-                                <input type="text" id="title" name="title"><br>
+                                <div class="d-flex">
+                                    <input type="text" id="title" name="title" class="col-5 h-36">
+                                    <p class="modalComents ms-3">
+                                        Title is the time you shine!<br>
+                                        Try to fit in 50 characters to keep it easy to read.<br>
+                                        <a href="..." class="purpledText">Guide to write an eye-catching title.</a></p>
+                                </div>
+                                <label for="price">Price:</label>
+                                <div class="d-flex">
+                                    <div class="d-inline-flex mb-2">
+                                        <i class="bi bi-currency-euro icon mx-2"></i>
+                                        <input type="text" id="price" name="price" class="h-36">
+                                    </div>
+                                    <p class="modalComents ms-3">
+                                        Enter price excluding VAT. We will add taxes and fees for you.<br>
+                                        <a href="..." class="purpledText">See more about fees.</a></p>
+                                </div>
                                 <label for="year">Year:</label>
-                                <input type="text" id="year" name="year"><br>
+                                <div class="d-flex">
+                                    <div class="d-inline-flex mb-2">
+                                        <i class="icon mx-2"></i>
+                                        <input type="number" min="1900" max="2099" step="1" id="year" name="year" class="h-36">
+                                    </div>
+                                    <p class="modalComents ms-3">
+                                        Year the artwork was created.</p>
+                                </div>
+                                <label for="tag">Tags:</label>
+                                <div class="d-flex">
+                                    <div class="d-flex flex-column">
+                                        <div class="d-inline-flex mb-2">
+                                            <i class="bi bi-hash icon mx-2"></i>
+                                            <input type="text" id="tag" name="tag" class="h-36">
+                                        </div>
+                                        <div class="col-3 d-inline-flex">
+                                            <i class="bi bi-plus-circle icon mx-2"></i>
+                                            <input type="text" name="tag" class="h-36">
+                                        </div>
+                                    </div>
+                                    <p class="modalComents ms-3">
+                                        Feel free to type tags that best match your artwork.<br>
+                                        This can include theme, colors, technology used, artwork type and your personal tags.<br>
+                                        We will automatically group them.<br>
+                                        <a href="..." class="purpledText">Check here existing Tags.</a></p>
+                                </div>
+                                <label for="colection">Colection:</label>
+                                <div class="d-flex">
+                                    <div class="d-flex flex-column">
+                                        <div class="d-inline-flex mb-2">
+                                            <i class="icon mx-2"></i>
+                                            <input type="text" id="colection" name="colection" class="h-36">
+                                        <p class="modalComents ms-3">Add the artwork to a collection.</p>
+                                        </div>
+                                        <div class="d-inline-flex">
+                                            <i class="bi bi-plus-circle icon mx-2"></i>
+                                        <input type="text" id="colection" name="colection" class="h-36">
+                                        <p class="modalComents ms-3">Add the artwork to a collection.</p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <label for="description">Description:</label>
-                                <textarea id="description" name="description" rows="4" cols="50"></textarea>
+                                <div class="d-flex">
+                                    <textarea id="description" name="description" rows="4" cols="40"></textarea>
+                                    <p class="modalComents ms-3">
+                                        Give a brief description about the artwork.<br>
+                                        Add details about the technology, medium, technique and year it was made.</p>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn-grey" data-bs-dismiss="modal">Save as Draft</button>
-                    <button type="button" class="btn-purp"><img src="assets/icons/upload.png" class="icon">Publish</button>
-                </div>
             </div>
         </div>
-      </div>
+    </div>
 
     </main>
     
@@ -333,7 +401,7 @@
 
                             <!-- buttons and price -->
                             <div class="d-flex gap-2 ">
-                                <button type="button" class=" btn-grey" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button type="button" class=" btn-grey" data-bs-toggle="modal" data-bs-target="#listingModal">
                                     <i class="bi bi-pen-fill"></i> &nbsp EDIT
                                 </button>
                                 <button type="button" class=" btn-purp" >
@@ -342,33 +410,99 @@
                             </div>
 
                             <!-- MODAL for listing EDIT --> 
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="listingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-xl">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">${artigo.title}</h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-3 bg-warning">
-                                                    <img src="${artigo.coverimg}" class="img img-fluid w-100">
+                                            <div class="d-flex flex-wrap">
+                                                <p class="modalComents col-12">Cover</p>
+                                                <div class="col-4">
+                                                    <div class="w-100 h-50 greyed d-flex justify-content-center align-items-center">
+                                                        <div class="bg-white px-2">
+                                                            <i class="bi bi-upload me-2"></i>Browse or Drag-and-drop
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="col bg-success">
+                                                <div class="col pl-30">
+                                                    <div class="d-flex pb-3">
+                                                        <button type="button" class="btn-grey me-3 col-4" data-bs-dismiss="modal">Save as Draft</button>
+                                                        <button type="button" class="btn-purp mx-3 col-4" data-bs-dismiss="modal"><img src="assets/icons/upload.png" class="icon">Publish</button>
+                                                    </div>
                                                     <form>
                                                         <label for="title">Title:</label>
-                                                        <input type="text" id="title" name="title" value="${artigo.title}" ><br>
+                                                        <div class="d-flex">
+                                                            <input type="text" id="title" name="title" class="col-5 h-36">
+                                                            <p class="modalComents ms-3">
+                                                                Title is the time you shine!<br>
+                                                                Try to fit in 50 characters to keep it easy to read.<br>
+                                                                <a href="..." class="purpledText">Guide to write an eye-catching title.</a></p>
+                                                        </div>
+                                                        <label for="price">Price:</label>
+                                                        <div class="d-flex">
+                                                            <div class="d-inline-flex mb-2">
+                                                                <i class="bi bi-currency-euro icon mx-2"></i>
+                                                                <input type="text" id="price" name="price" class="h-36">
+                                                            </div>
+                                                            <p class="modalComents ms-3">
+                                                                Enter price excluding VAT. We will add taxes and fees for you.<br>
+                                                                <a href="..." class="purpledText">See more about fees.</a></p>
+                                                        </div>
                                                         <label for="year">Year:</label>
-                                                        <input type="text" id="year" name="year" value="${artigo.year}"><br>
+                                                        <div class="d-flex">
+                                                            <div class="d-inline-flex mb-2">
+                                                                <i class="icon mx-2"></i>
+                                                                <input type="number" min="1900" max="2099" step="1" id="year" name="year" class="h-36">
+                                                            </div>
+                                                            <p class="modalComents ms-3">
+                                                                Year the artwork was created.</p>
+                                                        </div>
+                                                        <label for="tag">Tags:</label>
+                                                        <div class="d-flex">
+                                                            <div class="d-flex flex-column">
+                                                                <div class="d-inline-flex mb-2">
+                                                                    <i class="bi bi-hash icon mx-2"></i>
+                                                                    <input type="text" id="tag" name="tag" class="h-36">
+                                                                </div>
+                                                                <div class="col-3 d-inline-flex">
+                                                                    <i class="bi bi-plus-circle icon mx-2"></i>
+                                                                    <input type="text" name="tag" class="h-36">
+                                                                </div>
+                                                            </div>
+                                                            <p class="modalComents ms-3">
+                                                                Feel free to type tags that best match your artwork.<br>
+                                                                This can include theme, colors, technology used, artwork type and your personal tags.<br>
+                                                                We will automatically group them.<br>
+                                                                <a href="..." class="purpledText">Check here existing Tags.</a></p>
+                                                        </div>
+                                                        <label for="colection">Colection:</label>
+                                                        <div class="d-flex">
+                                                            <div class="d-flex flex-column">
+                                                                <div class="d-inline-flex mb-2">
+                                                                    <i class="icon mx-2"></i>
+                                                                    <input type="text" id="colection" name="colection" class="h-36">
+                                                                <p class="modalComents ms-3">Add the artwork to a collection.</p>
+                                                                </div>
+                                                                <div class="d-inline-flex">
+                                                                    <i class="bi bi-plus-circle icon mx-2"></i>
+                                                                <input type="text" id="colection" name="colection" class="h-36">
+                                                                <p class="modalComents ms-3">Add the artwork to a collection.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         <label for="description">Description:</label>
-                                                        <textarea id="description" name="description" value="${artigo.description} rows="4" cols="50"></textarea>
+                                                        <div class="d-flex">
+                                                            <textarea id="description" name="description" rows="4" cols="40"></textarea>
+                                                            <p class="modalComents ms-3">
+                                                                Give a brief description about the artwork.<br>
+                                                                Add details about the technology, medium, technique and year it was made.</p>
+                                                        </div>
                                                     </form>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn-grey" data-bs-dismiss="modal">Save as Draft</button>
-                                            <button type="button" class="btn-purp"><img src="assets/icons/upload.png" class="icon">Publish</button>
                                         </div>
                                     </div>
                                 </div>

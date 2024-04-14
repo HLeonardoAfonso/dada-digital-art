@@ -35,6 +35,10 @@ input {font-family: 'Inter';}
     height: 200px;
 }
 
+.h-36 {
+    height: 36px;
+}
+
 .pl-30 {
     padding-left: 30px;
 }
@@ -231,4 +235,12 @@ input {font-family: 'Inter';}
         background-color: #D9D9D9;
     }
 
-    
+.modalComents{
+    font-size: x-small;
+    font-family: 'Inter';
+    margin-bottom: 0;
+}
+
+.purpledText {
+    color: #BB86FF;
+}

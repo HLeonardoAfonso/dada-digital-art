@@ -10,7 +10,7 @@
                 toggledArray.push(id);
             }
 
-            findListings(toggledArray);
+            console.log(toggledArray);
             
         }
 

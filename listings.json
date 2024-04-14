@@ -14,10 +14,11 @@
         "title":"Big Long Title",
         "price":"250.00",
         "year":"2020",
-        "tags":"",
+        "tags":"abstract",
         "colection":"",
         "description":"",
         "coverimg":"/assets/images/ArtImage2.png",
+        "abstract":"true",
         "rating":"4.8"
     },
 
@@ -25,7 +26,7 @@
         "title":"Big Long Title",
         "price":"250.00",
         "year":"2020",
-        "tags":"",
+        "tags":"abstract",
         "colection":"",
         "description":"",
         "coverimg":"/assets/images/ArtImage3.png",

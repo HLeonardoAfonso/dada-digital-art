@@ -1,35 +1,32 @@
+        const button = document.getElementById("toggleAll");
+        const input = document.getElementsByClassName("sty");
+        
+        const toggledArray = [];
 
-        // __code for disable of togles__
-        // const button = document.getElementById("toggleAll");
-        // const input = document.getElementById("treeD");
-        // // const input2 = document.getElementsByClassName("sty");
-        // const input3 = document.getElementById("abstract");
+        function filterbyid(id) {
+            if (toggledArray.includes(id)) {
+                toggledArray.splice(toggledArray.indexOf(id), 1);
+            } else {
+                toggledArray.push(id);
+            }
 
-        // button.addEventListener("click", () => {
-        //     input.toggleAttribute("disabled");
-        //     // input2.toggleAttribute("disabled");
-        //     input3.toggleAttribute("disabled");
-        // });
+            findListings(toggledArray);
+            
+        }
 
+        const findListings  = async () => {
+            let strHtml = ``;
+            const response = await fetch('listings.json');
+            const lv = await response.json();
+            
 
-        const findListings = async () => {
-                let strHtml = ``
-                const response = await fetch('listings.json')
-                const lv = await response.json()
+            
 
-                let toggled = []
-                let searched = 
+            // const filterapplied = lv.filter(item => item.tags == abstract)
 
-                // var togglefilter = document.getElementById("threeD");
-                function toggleFilter() {
-                    toggled.push
-                }
+           
 
-
-                const filterapplied = lv.filter(item => item.Year == toggled )
-                console.log(filterapplied)
-
-                for (const artigo of lv) {
+            for (const artigo of lv) {
                     strHtml += `
                         <div class=" flex-column col-xxl-3 col-xl-3 col-lg-4 p-2 ">
                             <img src="${artigo.coverimg}" class="img img-fluid w-100">
@@ -112,6 +109,14 @@
                 }
                 document.getElementById("cardListing").innerHTML = strHtml;
             }
+
+            button.addEventListener("click", () => {
+                for (let i = 0; i < input.length; i++) {
+                    input[i].toggleAttribute("disabled");
+                }
+                
+                findListings();
+            });
 
         findListings();
     

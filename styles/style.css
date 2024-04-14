@@ -271,4 +271,9 @@ input {font-family: 'Inter';}
         background-color: #D9D9D9;
     }
 
+    .smalltext {
+        font-size: x-small;
+        margin: auto;
+    }
+    
     

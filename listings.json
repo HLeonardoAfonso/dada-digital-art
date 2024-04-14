@@ -5,7 +5,7 @@
         "year":"2020",
         "tags":"threeD",
         "colection":"",
-        "description":"",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "coverimg":"/assets/images/ArtImage1.png",
         "rating":"4.8"
     },
@@ -16,7 +16,7 @@
         "year":"2020",
         "tags":"abstract",
         "colection":"",
-        "description":"",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "coverimg":"/assets/images/ArtImage2.png",
         "abstract":"true",
         "rating":"4.8"

@@ -199,86 +199,93 @@ input {font-family: 'Inter';}
     border-radius: 75px;
     overflow: hidden;
 
-    }
+}
 
-    .imgwrap {
-        overflow: hidden;
-        height: 150px;
-    }
+.imgwrap {
+    overflow: hidden;
+    height: 150px;
+}
 
-    .badgeicon {
-        /* Badge */
-        width: 24px;
-        height: 24px;
-        background-color: #BB86FF;
-        border-radius: 12px;
-        border-width: 0px;
-        display: flexbox;
-        align-items: center;
-        overflow: hidden;
-    }
+.badgeicon {
+    /* Badge */
+    width: 24px;
+    height: 24px;
+    background-color: #BB86FF;
+    border-radius: 12px;
+    border-width: 0px;
+    display: flexbox;
+    align-items: center;
+    overflow: hidden;
+}
 
-    .badgeIconSmall {
-        /* Small Badge */
-        width: 16px;
-        height: 16px;
-        background-color: #BB86FF;
-        border-radius: 8px;
-        border-width: 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        font-size: 9px;
-    }
+.badgeIconSmall {
+    /* Small Badge */
+    width: 16px;
+    height: 16px;
+    background-color: #BB86FF;
+    border-radius: 8px;
+    border-width: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 9px;
+}
 
-    .badgeinfo {
-        /* Tag Badge */
-        
-        background-color: #D9D9D9;
-        border-radius: 12px;
-        border-width: 0px;
-        display: flexbox;
-        align-items: center;
-        width: fit-content;
-        padding: 0 10px;
-    }
+.badgeinfo {
+    /* Tag Badge */
+    background-color: #D9D9D9;
+    border-radius: 12px;
+    border-width: 0px;
+    display: flexbox;
+    align-items: center;
+    width: fit-content;
+    padding: 0 10px;
+}
 
-    .badgeInfoSmall {
-        /* Small Tag Badge */
-        
-        background-color: #D9D9D9;
-        border-radius: 7px;
-        border-width: 0px;
-        display: flexbox;
-        align-items: center;
-        width: fit-content;
-        padding: 0 5px;
-        font-size: 12px;
-    }
+.badgeInfoSmall {
+    /* Small Tag Badge */
+    
+    background-color: #D9D9D9;
+    border-radius: 7px;
+    border-width: 0px;
+    display: flexbox;
+    align-items: center;
+    width: fit-content;
+    padding: 0 5px;
+    font-size: 12px;
+}
 
-    .socialicon {
-        background-color: white;
-        border-width: 0px;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-    }
+.socialicon {
+    background-color: white;
+    border-width: 0px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
 
-    .purpled {
-        background-color: #BB86FF;
-    }
+.purpled {
+    background-color: #BB86FF;
+}
 
-    .greyed {
-        background-color: #D9D9D9;
-    }
+.purpledText {
+    color: #BB86FF;
+}    
 
-    .smalltext {
-        font-size: x-small;
-        margin: auto;
-    }
+.greyed {
+    background-color: #D9D9D9;
+}
+
+.reded {
+    background-color: #ff8686;
+}
+
+.smalltext {
+    font-size: x-small;
+    margin: auto;
+}
     
 .modalComents{
     font-size: x-small;
@@ -286,6 +293,3 @@ input {font-family: 'Inter';}
     margin-bottom: 0;
 }
 
-.purpledText {
-    color: #BB86FF;
-}

@@ -6,11 +6,11 @@ const findHomeListings  = async () => {
 
             
 
-            // const filterapplied = lv.filter(item => item.tags == abstract)
+            const filterapplied = lv.filter(item => item.tags == "popular" )
 
            
 
-            for (artigo of lv ) { 
+            for (artigo of filterapplied ) { 
                 
                     strHtml += `
                         <div class=" flex-column col-xxl-3 col-xl-3 col-lg-4 p-2 ">

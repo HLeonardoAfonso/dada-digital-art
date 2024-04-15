@@ -22,13 +22,13 @@
 
             
 
-            // const filterapplied = lv.filter(item => item.tags == abstract)
+            // const filterapplied = lv.filter(item => item.tags == )
 
            
 
             for (const artigo of lv) {
                     strHtml += `
-                        <div class=" flex-column col-xxl-3 col-xl-3 col-lg-4 p-2 ">
+                        <div class=" flex-column col-xxl-3 col-xl-3 col-lg-4 p-2 " tags="${artigo.tags}">
                             <img src="${artigo.coverimg}" class="img img-fluid w-100">
                             <!--Title-->
                             <div class="d-flex mt-1 ">

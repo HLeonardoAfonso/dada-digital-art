@@ -58,7 +58,7 @@ const findHomeListings  = async () => {
                             <!-- tags of the item type -->
                             <div class="d-flex flex-wrap my-1 gap-2">
                                 <button type="button" class="badgeInfoSmall ">
-                                    <i class="bi bi-arrow-up-right"> </i> Digital art 
+                                    <i class="bi bi-arrow-up-right"> </i> ${artigo.tags}
                                 </button>
                                 <button type="button" class="badgeInfoSmall" >
                                     <i class="bi bi-arrow-up-right"> </i>Etherium
@@ -168,7 +168,7 @@ const findHomeListings  = async () => {
                             <!-- tags of the item type -->
                             <div class="d-flex flex-wrap my-1 gap-2">
                                 <button type="button" class="badgeInfoSmall ">
-                                    <i class="bi bi-arrow-up-right"> </i> Digital art 
+                                    <i class="bi bi-arrow-up-right"> </i> ${artigo.tags} 
                                 </button>
                                 <button type="button" class="badgeInfoSmall" >
                                     <i class="bi bi-arrow-up-right"> </i>Etherium

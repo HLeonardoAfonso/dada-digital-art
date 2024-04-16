@@ -18,13 +18,8 @@
             let strHtml = ``;
             const response = await fetch('listings.json');
             const lv = await response.json();
-            
-
-            
 
             // const filterapplied = lv.filter(item => item.tags == )
-
-           
 
             for (const artigo of lv) {
                     strHtml += `

@@ -9,9 +9,7 @@
             } else {
                 toggledArray.push(id);
             }
-
             console.log(toggledArray);
-            
         }
 
         const findListings  = async () => {
@@ -103,7 +101,6 @@
                     `
                 }
                 document.getElementById("cardListing").innerHTML = strHtml;
-                
             }
 
             button.addEventListener("click", () => {

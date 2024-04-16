@@ -97,5 +97,15 @@
         "description":"",
         "coverimg":"/assets/images/ArtImage9.png",
         "rating":"4.8"
+    },
+    {
+        "title":"Big Long Title",
+        "price":"250.00",
+        "year":"2020",
+        "tags":"popular",
+        "colection":"",
+        "description":"",
+        "coverimg":"/assets/images/ArtImage8.png",
+        "rating":"4.8"
     }
 ]

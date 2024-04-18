@@ -2,6 +2,7 @@
     // collects the filters applied
     
     var toggledArray = [];
+    
 
     function filterbyid(id) {
         if (toggledArray.includes(id)) {

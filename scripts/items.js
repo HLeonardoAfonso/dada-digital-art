@@ -6,10 +6,15 @@
     function filterbyid(id) {
         if (toggledArray.includes(id)) {
             toggledArray.splice(toggledArray.indexOf(id), 1);
+            if (toggledArray.length == 0) {
+                findListings();
+            }
         } else {
             toggledArray.push(id);
         }
         console.log(toggledArray);
+
+
 
         let strBtnHtml = ``;
         for (const tag of toggledArray) {

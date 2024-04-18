@@ -14,8 +14,6 @@
         }
         console.log(toggledArray);
 
-
-
         let strBtnHtml = ``;
         for (const tag of toggledArray) {
             strBtnHtml += `

@@ -1,7 +1,7 @@
              
     // collects the filters applied
     
-    const toggledArray = [];
+    var toggledArray = [];
 
     function filterbyid(id) {
         if (toggledArray.includes(id)) {
@@ -10,7 +10,25 @@
             toggledArray.push(id);
         }
         console.log(toggledArray);
+
+        let strBtnHtml = ``;
+        for (const tag of toggledArray) {
+            strBtnHtml += `
+                <div class="btn-grey mx-2" style="width: fit-content;" onclick="closeTag()">
+                    <i class="bi bi-x"></i> ${tag}
+                </div>
+            `
+        }
+        document.getElementById("filterBtn").innerHTML = strBtnHtml;
+
+        return(toggledArray)
     }
+
+    // 
+
+    // function closeTag
+
+
 
     // collects JSON info to display the cards
 

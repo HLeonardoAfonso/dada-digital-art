@@ -119,11 +119,11 @@
                 <label class="form-check-label" for="algorithmic">Algorithmic</label>
             </div>
             <div class="form-check form-switch">
-                <input class="form-check-input sty " type="checkbox" role="switch" id="cartoon" onclick="filterbyid(this.id)">
+                <input class="form-check-input sty " type="checkbox" role="switch" id="cartoon" onclick="filterbyid(this.id)" >
                 <label class="form-check-label" for="cartoon">Cartoon</label>
             </div>
             <div class="form-check form-switch">
-                <input class="form-check-input sty " type="checkbox" role="switch" id="fan-art">
+                <input class="form-check-input sty " type="checkbox" role="switch" id="fan-art" checked>
                 <label class="form-check-label" for="fan-art">Fan Art</label>
             </div>
             <div class="form-check form-switch">
@@ -214,11 +214,8 @@
             <div class="d-flex justify-content-between">
                 <div class="d-flex" >
                     <h3 class="me-2">Search</h3>
-                    <div class="btn-grey mx-2" style="width: fit-content;">
-                        <i class="bi bi-x"></i>3D
-                    </div>
-                    <div class="btn-grey mx-2" style="width: fit-content;">
-                        <i class="bi bi-x"></i>Cartoon
+                    <div id="filterBtn" class="d-flex" style="width: fit-content;">
+                        <!--Display JS botons-->
                     </div>
                 </div>                
                 <div class="dropdown">

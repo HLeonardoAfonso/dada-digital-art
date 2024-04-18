@@ -1,8 +1,8 @@
              
     // collects the filters applied
     
-    var toggledArray = [];
-    
+    const toggledArray = [];
+
     function filterbyid(id) {
         if (toggledArray.includes(id)) {
             toggledArray.splice(toggledArray.indexOf(id), 1);
@@ -128,6 +128,8 @@
         let strHtml = ``;
         const response = await fetch('listings.json');
         const lv = await response.json();
+
+        // const filterapplied = lv.filter(item => item.tags == )
 
         for (const artigo of lv) {
                 strHtml += `
